@@ -8,6 +8,6 @@ router.get("/", (req, res) => {
   return res.json("Success");
 });
 router.post("/api/volunteer/register", CreateVolunteer);
-router.post("/api/volunteer/lists", GetAll);
+router.get("/api/volunteer/lists", GetAll);
 
 module.exports = router;
